@@ -37,6 +37,7 @@
                         <li class="nav-item"><a class="nav-link" href="#perfiles">Perfiles</a></li>
                         <li class="nav-item"><a class="nav-link" href="#plan">Plan de Estudios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#perfil-estudiante">Perfil del estudiante</a></li>
                         <li class="nav-item ms-xl-3 mt-2 mt-xl-0">
                             <a href="https://chaira.uniamazonia.edu.co/academicov3/vistas/publico/Inscripciones/Nuevos/InicialNuevos.aspx?nied=1" class="btn btn-custom-action text-white">Inscribirme</a>
                         </li>
@@ -394,87 +395,57 @@
 
 </section>
 
-<section id="preguntas" class="py-5">
+<section id="perfil-estudiante" class="py-5">
     <div class="container">
         <div class="section-title text-center mb-5">
-            <span class="section-subtitle">RESUELVE TUS DUDAS</span>
-            <h2>¿Tienes preguntas sobre la carrera?</h2>
-            <p>
-                Escríbenos tus preguntas sobre Ingeniería de Sistemas
-                y recibirás la respuesta directamente en tu correo electrónico.
-            </p>
+            <span class="section-subtitle">👨‍💻 PERFIL DEL ESTUDIANTE</span>
+            <h2>¿Tienes lo que se necesita para estudiar Ingeniería de Sistemas?</h2>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="contact-card">
+        <div id="carruselPerfil" class="carousel slide perfil-carousel" data-bs-ride="carousel" data-bs-interval="3500" aria-label="Características del estudiante de Ingeniería de Sistemas">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselPerfil" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Curiosidad por la tecnología"></button>
+                <button type="button" data-bs-target="#carruselPerfil" data-bs-slide-to="1" aria-label="Pensamiento lógico"></button>
+                <button type="button" data-bs-target="#carruselPerfil" data-bs-slide-to="2" aria-label="Capacidad para resolver problemas"></button>
+                <button type="button" data-bs-target="#carruselPerfil" data-bs-slide-to="3" aria-label="Creatividad"></button>
+                <button type="button" data-bs-target="#carruselPerfil" data-bs-slide-to="4" aria-label="Trabajo en equipo"></button>
+                <button type="button" data-bs-target="#carruselPerfil" data-bs-slide-to="5" aria-label="Interés por aprender continuamente"></button>
+            </div>
 
-                    <form id="questionForm">
-
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">
-                                Nombre completo
-                            </label>
-
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="nombre"
-                                name="nombre"
-                                placeholder="Escribe tu nombre"
-                                required
-                            >
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="correo" class="form-label">
-                                Correo electrónico
-                            </label>
-
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="correo"
-                                name="correo"
-                                placeholder="ejemplo@correo.com"
-                                required
-                            >
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="pregunta" class="form-label">
-                                Tu pregunta
-                            </label>
-
-                            <textarea
-                                class="form-control"
-                                id="pregunta"
-                                name="pregunta"
-                                rows="5"
-                                placeholder="Escribe aquí tu pregunta sobre la carrera..."
-                                required
-                            ></textarea>
-                        </div>
-
-                        <div class="text-center">
-                            <button
-                                type="submit"
-                                class="btn btn-primary px-4"
-                            >
-                                <i class="fa-solid fa-paper-plane me-2"></i>
-                                Enviar pregunta
-                            </button>
-                        </div>
-
-                    </form>
-
-                    <div id="alertSuccess" class="alert alert-success text-center mt-3 mb-0 d-none" role="alert">
-                        ¡Gracias! Tu pregunta fue enviada correctamente.
-                    </div>
-
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/perfil1.jpg" alt="Curiosidad por la tecnología">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/perfil2.jpg" alt="Pensamiento lógico">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/perfil3.jpg" alt="Capacidad para resolver problemas">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/perfil4.jpg" alt="Creatividad">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/perfil5.jpg" alt="Trabajo en equipo">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/perfil6.jpg" alt="Interés por aprender continuamente">
                 </div>
             </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselPerfil" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselPerfil" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
+
+        <p class="perfil-frase text-center">
+            No necesitas saber programar antes de comenzar. Lo importante es tener ganas de aprender.
+        </p>
     </div>
 </section>
 

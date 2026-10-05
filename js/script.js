@@ -51,25 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', animateStats);
 
-    const form = document.getElementById('questionForm');
-    const alertSuccess = document.getElementById('alertSuccess');
-
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        event.stopPropagation();
-
-        if (form.checkValidity()) {
-            alertSuccess.classList.remove('d-none');
-            form.reset();
-            form.classList.remove('was-validated');
-
-            setTimeout(() => {
-                alertSuccess.classList.add('d-none');
-            }, 5000);
-        } else {
-            form.classList.add('was-validated');
-        }
-    }, false);
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {

@@ -392,30 +392,39 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
-.contact-card {
-    background: #fff;
-    border-radius: 24px;
-    padding: 1.5rem;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
-    border: 1px solid rgba(0, 0, 0, 0.04);
+.perfil-carousel {
+    max-width: 640px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #e3f1ea;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
-@media (min-width: 576px) {
-    .contact-card {
-        padding: 3rem;
-    }
+.perfil-carousel .carousel-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
-.form-control {
-    border-radius: 12px;
-    padding: 12px 16px;
-    border: 1.5px solid #e2e8f0;
-    transition: var(--transition-smooth);
+.perfil-carousel .carousel-indicators {
+    margin-bottom: 0.6rem;
 }
 
-.form-control:focus {
-    border-color: var(--secondary-jungle);
-    box-shadow: 0 0 0 4px rgba(19, 117, 71, 0.15);
+.perfil-carousel .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.perfil-frase {
+    max-width: 640px;
+    margin: 2rem auto 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-forest);
 }
 
 .footer-dark {
